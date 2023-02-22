@@ -13,9 +13,9 @@ import json
 
 outputObject = {
     "temp": str(cpu.temperature),
-    "c": clockOutput,
-    "v": voltsOutput,
-    "top": topOutput,
+    "c": str(clockOutput),
+    "v": str(voltsOutput),
+    "top": str(topOutput),
 }
 
 outputJSON = json.dumps(outputObject)
